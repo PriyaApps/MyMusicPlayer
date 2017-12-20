@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColorLayout"
+    tools:context="com.example.home.mymusicplayer.NowPlayingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/now_play_desc"
+            android:textColor="@color/colorOptions"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/repeat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/repeat_button" />
+
+            <ImageButton
+                android:id="@+id/shuffle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/next"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shuffle_button" />
+
+            <ImageButton
+                android:id="@+id/prev"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/repeat"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prev_button" />
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/prev"
+                android:scaleType="centerCrop"
+                android:src="@drawable/play_button" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/play"
+                android:scaleType="centerCrop"
+                android:src="@drawable/next_button" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
