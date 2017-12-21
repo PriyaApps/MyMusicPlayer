@@ -3,16 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgColorLayout"
     tools:context="com.example.home.mymusicplayer.SettingsActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/settings_desc"
-        android:textColor="@color/colorOptions"
-        android:textSize="22sp"
-        android:textStyle="italic" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/settings"
+            android:textColor="@color/colorOptions"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/settings_desc"
+            android:textColor="@color/colorOptions"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/main_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorButton"
+            android:padding="10dp"
+            android:text="@string/main_screen" />
+
+    </LinearLayout>
 
 </ScrollView>

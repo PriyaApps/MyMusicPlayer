@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgColorLayout"
     tools:context="com.example.home.mymusicplayer.NowPlayingActivity">
 
     <LinearLayout
@@ -14,7 +13,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
+            android:text="@string/now_playing"
+            android:textColor="@color/colorOptions"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/now_play_desc"
             android:textColor="@color/colorOptions"
             android:textSize="22sp"
@@ -31,14 +39,15 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentLeft="true"
+                android:contentDescription="@string/repeat_button"
                 android:scaleType="centerCrop"
                 android:src="@drawable/repeat_button" />
 
             <ImageButton
-                android:id="@+id/shuffle"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_toRightOf="@id/next"
+                android:contentDescription="@string/shuffle_button"
                 android:scaleType="centerCrop"
                 android:src="@drawable/shuffle_button" />
 
@@ -47,6 +56,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_toRightOf="@id/repeat"
+                android:contentDescription="@string/prev_button"
                 android:scaleType="centerCrop"
                 android:src="@drawable/prev_button" />
 
@@ -55,6 +65,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_toRightOf="@id/prev"
+                android:contentDescription="@string/play_button"
                 android:scaleType="centerCrop"
                 android:src="@drawable/play_button" />
 
@@ -63,9 +74,30 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_toRightOf="@id/play"
+                android:contentDescription="@string/next_button"
                 android:scaleType="centerCrop"
                 android:src="@drawable/next_button" />
         </RelativeLayout>
+
+        <Button
+            android:id="@+id/song_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorButton"
+            android:padding="10dp"
+            android:text="@string/song_details" />
+
+        <Button
+            android:id="@+id/main_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorButton"
+            android:padding="10dp"
+            android:text="@string/main_screen" />
 
     </LinearLayout>
 

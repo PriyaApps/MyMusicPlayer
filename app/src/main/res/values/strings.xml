@@ -3,6 +3,14 @@
     <string name="recent_items">Recently Played</string>
     <string name="now_playing">Now Playing</string>
     <string name="now_play_desc">Shows the details of the song being played and also the player control buttons.</string>
+    <string name="play_button">Play</string>
+    <string name="prev_button">Previous Track</string>
+    <string name="next_button">Next Track</string>
+    <string name="shuffle_button">Shuffle</string>
+    <string name="repeat_button">Repeat</string>
+    <string name="song_details">To Song Details Menu</string>
+    <string name="main_screen">To Home Screen</string>
+    <string name="home_screen">Home Screen</string>
     <string name="library">Music Library</string>
     <string name="playlists">My Playlists</string>
     <string name="artists">Artists</string>
@@ -17,5 +25,4 @@
     <string name="main_desc">Tap on the desired option to view the corresponding activity</string>
     <string name="buy">Buy</string>
     <string name="payment_desc">Payment is made using the IInAppBillingService.\n\nTO_DO : \n\nCopy the corresponding aidl file\nCreate the helper classes\nSet the billing permission in the manifest file\nCreating instance for the helper classes in the onCreate method of this activity\nWhen the \"Buy\" button is clicked it will initiate the purchase\nImplement the onActivityResult Method and the Purchase Finished Listener\nAfer the purchase is completed, release the labHelper instances.</string>
-
 </resources>

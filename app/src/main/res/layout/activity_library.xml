@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgColorLayout"
     tools:context="com.example.home.mymusicplayer.LibraryActivity">
 
     <LinearLayout
@@ -14,14 +13,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
+            android:text="@string/library"
+            android:textColor="@color/colorOptions"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/lib_desc"
             android:textColor="@color/colorOptions"
             android:textSize="22sp"
             android:textStyle="italic" />
 
         <TextView
-            android:id="@+id/playlists"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -34,7 +41,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/albums"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -47,7 +53,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/artists"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -60,7 +65,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/all_songs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

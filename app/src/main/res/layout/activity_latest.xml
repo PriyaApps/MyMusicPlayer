@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgColorLayout"
     tools:context="com.example.home.mymusicplayer.LatestActivity">
 
     <LinearLayout
@@ -14,14 +13,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
+            android:text="@string/collections"
+            android:textColor="@color/colorOptions"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/latest_desc"
             android:textColor="@color/colorOptions"
             android:textSize="22sp"
             android:textStyle="italic" />
 
         <TextView
-            android:id="@+id/buy"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -35,9 +42,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_margin="10dp"
             android:text="@string/payment_desc"
             android:textColor="@color/colorOptions"
             android:textSize="22sp"
@@ -52,6 +57,16 @@
             android:background="@color/colorButton"
             android:padding="10dp"
             android:text="@string/now_playing" />
+
+        <Button
+            android:id="@+id/main_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorButton"
+            android:padding="10dp"
+            android:text="@string/main_screen" />
 
     </LinearLayout>
 
